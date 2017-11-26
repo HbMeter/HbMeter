@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/immagine"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@android:color/holo_green_light" />
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/istogramma"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="190dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonleft"
+        android:layout_width="25dp"
+        android:background="@drawable/left"
+        android:layout_height="70dp"
+        android:layout_centerVertical="true" />
+
+    <Button
+        android:id="@+id/buttonright"
+        android:layout_width="25dp"
+        android:background="@drawable/right"
+        android:layout_height="70dp"
+
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/layout1"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:id="@+id/mediaastar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:textColor="@android:color/black"
+            android:textAlignment="center"
+            android:text="μA*:"
+            android:textStyle="bold"
+            android:textSize="17dp"/>
+        <TextView
+            android:id="@+id/hb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimary"
+            android:textAlignment="center"
+            android:text="HbEye:"
+            android:textStyle="bold"
+            android:textSize="17dp"/>
+        <TextView
+            android:id="@+id/hblab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textColor="@android:color/holo_green_light"
+            android:text="HbLab:"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="17dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/buttonlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/hb1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_weight="1"
+            android:text="Hb Laboratorio" />
+
+        <Button
+            android:id="@+id/email"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Invia" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

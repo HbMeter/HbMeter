@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Hb Meter</string>
+    <string name="title_home">Report</string>
+    <string name="title_dashboard">Analizza</string>
+    <string name="title_notifications">Impostazioni</string>
+    <string name="report">Report</string>
+    <string name="dettaglio">Separazione dei colori RGB</string>
+    <string name="analisi">Analisi Congiuntiva</string>
+    <string name="list_file">Image Picker</string>
+    <string name="camera22">Camera</string>
+    <string name="impostazioni">Impostazioni</string>
+    <string name="Camerafrag">Camera Fragment</string>
+    <string name="elaborazione">Elaborazione</string>
+    <string name="request_permission">This sample needs camera permission.</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>

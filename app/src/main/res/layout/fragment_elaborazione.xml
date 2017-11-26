@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hbmeter.hbmeter.ElaborazioneFragment">
+
+
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        app:srcCompat="@android:color/transparent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignLeft="@+id/imageView5"
+        android:layout_centerVertical="true"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button_analizza"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:clickable="false"
+            android:alpha="0.3"
+            android:background="@color/colorPrimary"
+            android:text="A\nn\na\nl\ni\nz\nz\na"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/button_reset"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:alpha="0.3"
+            android:background="@color/colorPrimary"
+            android:text="R\ne\ns\ne\nt\nt\na"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/bar3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:id="@+id/textprg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:background="@android:color/transparent"
+        android:text="Elaborazione in corso..."
+        android:visibility="invisible"
+        android:textSize="18sp"
+        android:layout_below="@+id/bar3"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textselez"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="Selezione in corso..."
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        android:layout_alignBaseline="@+id/textprg"
+        android:layout_alignBottom="@+id/textprg"
+        android:layout_alignStart="@+id/textprg" />
+
+
+</RelativeLayout>

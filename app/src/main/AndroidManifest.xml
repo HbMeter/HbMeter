@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="hbmeter.hbmeter">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus"
+        android:required="false"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icona"
+        android:hardwareAccelerated="true"
+        android:largeHeap="true"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icona"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name=".StateSplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".PreviewDemo"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name=".ListFileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen"
+            android:label="@string/list_file">
+        </activity>
+
+        <activity
+            android:name=".CameraActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen"
+            android:label="@string/camera22">
+        </activity>
+
+        <fragment
+            android:name=".ReportFragment"
+            android:label="@string/app_name">
+        </fragment>
+
+        <fragment
+            android:name=".Camera2BasicFragment"
+            android:label="@string/Camerafrag">
+        </fragment>
+
+        <fragment
+            android:name=".SettingsFragment"
+            android:label="@string/app_name">
+        </fragment>
+
+        <fragment
+            android:name=".DettaglioFragment"
+            android:label="@string/Camerafrag">
+        </fragment>
+
+        <fragment
+            android:name=".AnalizzaFragment"
+            android:label="@string/app_name">
+        </fragment>
+
+        <fragment
+            android:name=".ElaborazioneFragment"
+            android:label="@string/app_name">
+        </fragment>
+
+        <fragment
+            android:name=".HelpFragment"
+            android:label="@string/app_name">
+        </fragment>
+
+        <provider
+            android:name=".GenericFileProvider"
+            android:authorities="${applicationId}.my.package.name.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+
+    </application>
+
+</manifest>
